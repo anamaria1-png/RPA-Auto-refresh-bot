@@ -1,0 +1,13 @@
+from selenium import webdriver
+from datetime import datetime
+
+b1 = webdriver.Firefox()
+b1.get("https://fmi.unibuc.ro/cazare/")
+
+while 1:
+	for i in range(3000000000):
+		pass
+	now = datetime.now()
+	current_time = now.strftime("%H:%M:%S")
+	b1.refresh()
+	print("============= refresh executed @", current_time, "=============")
